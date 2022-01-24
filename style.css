@@ -1,0 +1,62 @@
+body{
+margin: 0px;
+background-color: #FFE821;
+font-family: "URW Chancery L",cursive;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 18px;
+    font-family: serif;
+}
+
+.titulo{
+    margin: 0px 0px 0px 5px;
+    width: 20%;
+    text-align: center;
+}
+.canvas {
+    margin: 0px;
+}
+
+.topnav{
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+}
+
+.content{
+    width: 100%;
+    height: 400px;
+}
+
+.navbar{
+    display: flex;
+    margin: 0px;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-item{
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:hover{
+    background-color:#FFE821 ;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    
+}
