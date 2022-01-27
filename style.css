@@ -37,15 +37,16 @@ ul{
 .navbar{
     display: flex;
     margin: 0px;
-    height: 100%;
     align-items: center;
 }
 
 .nav-item{
-    padding: 0 15px;
-    height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    width: 170px;
+    max-width: 80%;
 }
 
 .nav-item:hover{
@@ -57,6 +58,10 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.navbar,
+.menu,
+.nav-item {
     height: 100%;
-    
 }
