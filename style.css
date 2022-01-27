@@ -1,7 +1,11 @@
 body{
 margin: 0px;
-background-color: #FFE821;
+background-color: white;
 font-family: "URW Chancery L",cursive;
+display: flex;
+flex-direction: column;
+width: 100vw;
+height: 100vh;
 }
 
 ul{
@@ -15,9 +19,7 @@ ul{
     width: 20%;
     text-align: center;
 }
-.canvas {
-    margin: 0px;
-}
+
 
 .topnav{
     background-color: white;
@@ -27,11 +29,7 @@ ul{
     align-items: center;
     position: fixed;
     top:0;
-}
-
-.content{
-    width: 100%;
-    height: 400px;
+    z-index: 10000;
 }
 
 .navbar{
@@ -65,3 +63,111 @@ ul{
 .nav-item {
     height: 100%;
 }
+
+.content {
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top:70px;
+    gap: 70px;
+    background-color: #FFE821;
+}
+
+.top{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.bottom {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+
+}
+.receita-home{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parmegiana{
+    background: url("images/parmegiana.jpg");
+}
+
+.strogonoffe{
+    background: url("images/strogonoffe.jpg");
+}
+
+.feijoada{
+    background: url("images/feijoada.jpg");
+}
+
+.palha-italiana{
+    background: url("images/palha-italiana.jpg");
+}
+
+.frango-empanado{
+    background: url("images/frango-empanado.jpg");
+}
+
+.brigadeiro{
+    background: url("images/brigadeiro.jpg");
+}
+
+.fit-image{
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.fit-image:hover{
+    opacity: 1
+}
+
+
+.titulo-prato{
+    text-align: center;
+    font-size: 20px;
+    background: rgb(253, 253, 253, 0.5);
+    width: 200px;
+}
+
+.mais-acessados{
+    align-self: center;
+    font-size: 32px;
+    margin-bottom: -60px;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+.footer{
+    display: flex;
+    background-color: white;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+
+/* ALTERAR PARA SER RESPONSIVO */
+
+
+@media only screen and (max-width: 1190px) {
+    .titulo{
+        font-size: 25px;
+    }
+    ul{
+        font-size: 16px;
+    }
+    
+} 
+
+/* Problemas
+1. Testando em telas grandes (1600x1600, por exemplo) o header e o footer não ficam fixos. Por que?
+2. Ainda em telas grandes, pelo fato de Height ser 100vh (100% tamanho da tela) fica muito espaço vazio;
+3. Div class="content" considera a tela inteira como espaço, visto que o header e footer estão com posições fixas.
+Com isso, ao tentar centralizar os itens na div criada não fica exatamente centrada, já que o local de visualização
+é menor do que o espaço real. Como ajustar? */
