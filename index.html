@@ -11,33 +11,68 @@
 
 <body>
         <div class ="topnav">
-            <h1 class="titulo">Receitas da Zó</h1>
-
+            <a href="index.html" class="titulo"><h1>Receitas da Zó</h1></a>
+        
             <div class="menu">
-                <ul class="navbar">
+                <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn">Especialidades</button>
+                        <div class="dropdown-content">
+                        <a href="#" class="sublinks">Link 1</a>
+                        <a href="#" class="sublinks">Link 2</a>
+                        <a href="#" class="sublinks">Link 3</a>
+                        </div>
+                    </div> 
+                    <div class="dropdown">
+                        <button class="dropbtn">Pratos Rápidos</button>
+                        <div class="dropdown-content">
+                        <a href="#" class="sublinks">Link 1</a>
+                        <a href="#" class="sublinks">Link 2</a>
+                        <a href="#" class="sublinks">Link 3</a>
+                        </div>
+                    </div> 
+                    <div class="dropdown">
+                        <button class="dropbtn">Pratos Sofisticados</button>
+                        <div class="dropdown-content">
+                        <a href="#"class="sublinks">Link 1</a>
+                        <a href="#" class="sublinks">Link 2</a>
+                        <a href="#" class="sublinks">Link 3</a>
+                        </div>
+                    </div> 
+                </div>
+                <!-- <ul class="navbar">
                     <li class="nav-item" id="especialidade">Especialidades</li>
                     <li class="nav-item" id="pratos-rapidos">Pratos Rápidos</li>
                     <li class="nav-item" id="pratos-sofitiscados">Pratos Sofisticados</li>
-                </ul>
+                </ul> -->
             </div>
 
         </div>
+
     <div class="content">
-        <div class="mais-acessados"><p> Pratos mais acessados</p></div>
-        <div class="top">
-            <div class="receita-home parmegiana fit-image"><p class="titulo-prato">Parmegiana</p></div>
-            <div class="receita-home strogonoffe fit-image"><p class="titulo-prato">Strogonoffe</p></div>
-            <div class="receita-home feijoada fit-image"><p class="titulo-prato">Feijoada</p></div>
+        <div class="mais-acessados"><p id="mais-acessados"> Mais acessados</p></div>
+        <div class="main-content">
+            <div class="main-content-mae"></div>
+            <div class="main-content-images">
+                <div class="top">
+                    <div class="receita-home parmegiana fit-image"><p class="titulo-prato">Parmegiana</p></div>
+                    <div class="receita-home strogonoffe fit-image"><p class="titulo-prato">Strogonoffe</p></div>
+                    <div class="receita-home feijoada fit-image"><p class="titulo-prato">Feijoada</p></div>
+                </div>
+                <div class="bottom">
+                    <div class="receita-home palha-italiana fit-image"><p class="titulo-prato">Palha Italiana</p></div>
+                    <div class="receita-home frango-empanado fit-image"><p class="titulo-prato">Frango Empanado</p></div>
+                    <div class="receita-home brigadeiro fit-image"><p class="titulo-prato">Brigadeiro</p></div>
+                </div>
+            </div>
         </div>
-        <div class="bottom">
-            <div class="receita-home palha-italiana fit-image"><p class="titulo-prato">Palha Italiana</p></div>
-            <div class="receita-home frango-empanado fit-image"><p class="titulo-prato">Frango Empanado</p></div>
-            <div class="receita-home brigadeiro fit-image"><p class="titulo-prato">Brigadeiro</p></div>
-        </div>
+    </div> 
 
         <div class="footer">
-            <div class="footer-left"><p>teste</p></div>
-
+            <div class="footer-right">
+                <a href="https://github.com/gukenji" class="image-links" target="_blank"><img class ="github" src="images/github.png"></a>
+                <a href="https://www.linkedin.com/in/gustavo-takahashi-182bb745" class="image-links" target="_blank"><img class ="linkedin" src="images/linkedin.png"></a>
+            </div>
         </div>
     </div>
 
